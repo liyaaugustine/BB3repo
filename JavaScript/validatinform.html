@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formvalidation</title>
+</head>
+<body>
+    <form onsubmit="return validate()">
+    <label for="uname"> Username:</label>
+    <input type="text" id="uname">
+    <small id="uerror"></small>
+
+    <label for="pswd">password:</label>
+    <input type="password" id="pswd">
+    <small id="perror"></small>
+    <button type="submit">Submitt</button>
+
+</form>
+    <script>
+function validate(){
+    var status=0;
+    var u=document.getElementById('uname').value;
+    var p=document.getElementById('pswd').value;
+    var uer=document.getElementById('uerror');
+    var per=document.getElementById('perror')
+
+    if(u.trim==""){
+        uer.innerHTML="Enter user name";
+        status=0;
+    }
+    else{
+        uer.innerHTML=""
+        status=1;
+    }
+    if(p.trim==""){
+        per.innerHTML="Please Enter password";
+        status=0;
+    }
+if(status==0){
+    return false;
+}
+else{
+    return true;
+}
+
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>displayprime</title>
+</head>
+<body>
+    Enter 1st number:
+    <input type="number" id="first">
+    Enter Limit:
+    <input  type="number" id="second">
+    <button type="button" onclick="display()">Click</button>
+    <script>
+function display(){
+    var i,j,a,b;
+    var flag=0;
+a=Number(document.getElementById('first').value);
+b=Number(document.getElementById('second').value);
+
+    for(i=a; i<b; i++){
+        flag=0;
+       
+        for(j=2; j<i; j++){
+            if(i%j==0){
+                flag=1;
+               
+            }
+            if(flag==1){
+                break;
+            }
+        }
+        if (i > 1 && flag == 0) {
+            document.write(i+"<br>")
+        }
+    }
+}
+    </script>
+</body>
+</html>

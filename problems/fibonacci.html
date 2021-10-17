@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fibnocci</title>
+</head>
+Enter the limit:
+<input type="text" id="lmt">
+<button type="button" onclick="fib()">Click</button>
+<body>
+    <script>
+        function fib(){
+            var a,b, rslt;
+            a=0;
+            b=1;
+            rslt=a;
+             var num=document.getElementById('lmt').value;
+            for(var i=1; i<num; i++){
+
+                document.write(rslt + "<br>");
+                rslt=a+b; //2+3=5
+                a=b; // her a change to 3 
+                b=rslt; // here b change to 5
+                
+            }
+           
+        } 
+    </script>
+</body>
+</html>

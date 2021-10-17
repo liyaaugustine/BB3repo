@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weird</title>
+</head>
+<body>
+    Enter number:
+    <input type="number" id="num">
+    <button type="button" onclick="check()">Click</button>
+
+    <script>
+        function check(){
+            var n=Number(document.getElementById('num').value);
+            if(n%2==0 && n>=2&&n<=5){
+                document.write('not weird');
+            }
+            else if(n>=6&&n<=20){
+                document.write('weird');
+            }
+        
+            else if (n%2==0&&n>20){
+                document.write('not weird');
+            }  
+            else{
+                document.write('weird');
+            }
+        }
+    
+    </script>
+</body>
+</html>

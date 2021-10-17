@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>armstrong</title>
+</head>
+<body>
+    
+    <script>
+        document.write('Enter any  Number:' + '<br>');
+       function arm(){
+           
+            var x=Number(document.getElementById("arnmbr").value);
+            var rem, temp, sum=0;
+            temp=x;
+            while(temp!=0)
+            {
+                rem=temp%10; // consider temp is 153 
+                sum=sum+rem*rem*rem; //3^3=27
+                temp=parseInt(temp/10); //153/10 =15; 15/10=1; ...3^3+5^3+1^3=153
+            }
+            if(sum==x){
+            document.write(" Number is Armstrong");
+        }
+            else{
+                document.write(" Number is  Not Armstrong");
+            }
+            }
+       </script>
+    <input type="number" name="" id="arnmbr"> 
+    <button type="submit" onclick="arm()">click</button>
+</body>
+</html>

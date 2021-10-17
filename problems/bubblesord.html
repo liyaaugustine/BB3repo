@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble Sort</title>
+</head>
+<body>
+    <h3>Click here to Sort the Array Elements</h3>
+    <button type="button" onclick="sort()">click</button>
+    <script>
+function sort(){
+    var num=[5, 4,8,6,3,7,50,66,26,80]
+    document.write('Enterd value is:'+ num +'<br>');
+
+    num.sort(function(a , b) {return a - b});
+    document.write("sorted values is:"+ num);
+}
+    </script>
+</body>
+</html>

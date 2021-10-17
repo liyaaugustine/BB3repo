@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+   <h1></h1>
+   <p id="para">first paragraph</p>
+   <h1 class="head">heading2</h1>
+   <p id="para2">good morning</p>
+   <input type="text">
+   <button type="button" id="h">hide</button>
+   <button type="button" id="s">show</button>
+   <div id="div1" style="background-color:coral; width: 400px; height: 300px;"><p>inside the div.. </p></div>
+
+   <script>
+       $(function(){
+
+$('h1').html('<i>heading</i>')
+console.log($('#para').html())
+console.log($('.head').html())
+$('#para').css('color','red')
+$('.head').css({
+    'color':'green',
+    'background-color':'grey'
+
+})
+$('input').blur(function(){
+    console.log('para2');
+});
+$('#h').click(function(){
+    $('#para').hide('slow',function(){
+        alert('paragraph is hidden')
+    })
+})
+
+$('#s').click(function(){
+    $('#para').show()
+    $('#div1').delay('slow').animate({
+    padding:'10px',
+    height:'toggle',
+    width:"250px"
+    
+})
+})
+$('#para').html(function (index, currentcontent){
+    return 'new paragraph '+ currentcontent
+})
+var x=$('<p>the sky is beautiful </p>')
+console.log(x)
+$('#div1').append(x)
+$('#div1').addClass('newclass')
+})
+
+   </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>matrix</title>
+</head>
+<body>
+<input type="text" id="txt">
+<button type="button" onclick="add()">Push</button><br><br>
+    <script>
+        function add(){
+        var text=document.getElementById('txt').value
+        var fruits=['apple','orange']
+        fruits.push(text)
+        document.write(fruits + "<br>");
+    }
+    </script>
+
+    <script>
+         var animal=['lion','tiger','deer']
+         animal.push("goat");
+        document.write(animal + "<br>")
+        </script>
+
+   <script>
+      var text=['dog','baloon','apple','zebra','orange']
+        document.write("<b>"+"Enterd words are:" +"</b>" +text+"<br>")
+         text.sort()
+         document.write('<b>'+'sorted alphabeticaly:'+'</b>'+text + "<br>")
+   </script> <br>
+
+    <textarea rows="3" cols="10" id="num"></textarea>
+    <button type="submit" onclick="print()">Print</button>
+   <script>
+       function print(){
+       var inp=document.getElementById('num').value;
+       
+       document.write("enterd numbers is:"+inp+ "<br>");
+        inp.sort(function(a , b) {return a - b});
+        document.write("sorted number is:"+inp+ "<br>");
+    }
+   </script>
+</body>
+</html>

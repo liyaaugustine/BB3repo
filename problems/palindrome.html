@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome</title>
+</head>
+<body>
+    Enter The Word:<br>
+    <input type="text" name="" id="word">
+    <button type="submit" onclick="pal()">Check</button>
+
+    <script type="text/javascript">
+        function pal(){
+            var inpstring=document.getElementById('word').value;
+            revstring="";
+            i=inpstring.length;
+
+        for( j=i; j>=0;j--){
+            revstring=revstring+inpstring.charAt(j);
+           //document.write(revstring +'<br>')    
+        }
+        if(inpstring==revstring){
+        alert('Enterd word is palindrome');
+        }
+        else{
+            alert('Enterd word is not palindrome');
+        }
+    }
+    </script>
+</body>
+</html>

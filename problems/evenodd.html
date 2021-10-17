@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even or Odd</title>
+</head>
+<body>
+    Enter any Number:
+    <input type="number" name="" id="odd">
+       <button type="submit" onclick="evenodd()">Click</button>
+    <script>
+       function evenodd()
+       {
+           var x=Number(document.getElementById("odd").value);
+           if(x%2==0)
+           {
+               alert('Number is Even');
+           }
+           else{
+               alert('Number is odd');
+            
+            }
+       }
+    </script>
+       
+</body>
+</html>

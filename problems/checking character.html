@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checking character</title>
+</head>
+<body>
+    Enter Your String:
+    <input type="text" id="strng"><br><br>
+    Enter character:
+    <input type="text" id="char">
+   <button type="button" onclick="match()">Check</button>
+    <script>
+function match(){
+    var res;
+    var str=document.getElementById('strng').value;
+    var charct=document.getElementById('char').value;
+   var res=str.match(charct);
+
+if(charct==res){
+
+    document.write("<b>"+'Enterd char from the string is:'+ "<b>"+"<br>");
+    document.write(res);
+     
+}
+else{
+    alert('Enterd charcter is not in the string you type');
+}
+}
+
+    </script>
+</body>
+</html>

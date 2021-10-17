@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js" integrity="sha512-Gfrxsz93rxFuB7KSYlln3wFqBaXUc1jtt3dGCp+2jTb563qYvnUBM/GP2ZUtRC27STN/zUamFtVFAIsRFoT6/w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.css" integrity="sha512-+1GzNJIJQ0SwHimHEEDQ0jbyQuglxEdmQmKsu8KI7QkMPAnyDrL9TAnVyLPEttcTxlnLVzaQgxv2FpLCLtli0A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+        img {
+        float: left;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    li{
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+    }
+ 
+    </style>
+    
+</head>
+<body>
+    
+
+    <ul id="mySlider" class="gallery">
+        <li> 
+          <a href="#"> <img src="redtree.jpg"></a>
+        </li>
+        <li>
+            <a href="#"> <img src="blutree.jpg"> </a>
+        </li>
+        <li>
+            <a href="#"> <img src="bird1.jpg"></a>
+        </li>
+    </ul>
+  
+    <script>
+$(document).ready(function(){
+    $('#mySlider').lightSlider({
+        item: 1,
+        slideMove:1,
+        slideMargin:10,
+        mode: "slide",
+        useCSS: true,
+        cssEasing: 'true',
+       
+ 
+        speed: 2000, //ms'
+        auto: true,
+        loop: true,
+        pause: 2000,
+ 
+        keyPress: true,
+        controls: true,
+       
+        rtl:false,
+        adaptiveHeight:false,
+        pager: true,
+        gallery: false,
+        galleryMargin: 5,
+        thumbMargin: 3,
+        currentPagerPosition: 'middle',
+ 
+        enableDrag:true,
+        swipeThreshold: 40,
+ 
+        responsive : [],
+        /*onBeforeStart: function ($el) {},
+        onSliderLoad: function ($el) {},
+        onBeforeSlide: function ($el) {},
+        onAfterSlide: function ($el, scene) {},
+        onBeforeNextSlide: function ($el, scene) {},
+        onBeforePrevSlide: function ($el, scene) {},*/
+   
+    });
+});
+
+
+    </script>
+
+</body>
+</html>

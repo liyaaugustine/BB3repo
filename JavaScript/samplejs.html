@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>swapping and switch</title>
+</head>
+<body>
+   
+    <button type="button" onclick="num()">Check</button>
+    <p id="para">Hai Gudmng</p>
+    <script>
+        function num(){
+ /*var num1=10;
+        var num2=20;
+        var temp=num1;
+        num1=num2;
+        num2=temp;
+
+        document.write(num2 +"<br>");
+        document.write(num1);
+        console.log(document);*/
+        document.getElementById('para').align='center'//align to center
+         }
+    </script>
+    Enter Letter b/w A & C:
+<input type="text" id="day">
+<button type="button" onclick="word()">Switch</button>
+    <script>
+      function word(){
+          var a=document.getElementById('day').value;
+        switch(a){
+            case "A":
+            document.write("sunday");
+            break;
+            case "B":
+            document.write("monday");
+            break;
+            case "C":
+            document.write("Tuesday");
+            break;
+            default:
+                document.write("invalid input");
+        }
+    }
+    </script>
+</body>
+</html>

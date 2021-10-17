@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootsrap</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <style>
+        .row div:nth-child(odd){
+            background-color:burlywood;
+        }
+        .row div:nth-child(even){
+            background-color: crimson;
+        }
+    </style>
+</head>
+
+<body>
+  
+<div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6"><img src="redtree.jpg" class="rounded-circle" alt="redtree" width="300" height="200"></div>
+            <div class="col-md-6"><img src="blutree.jpg" class="rounded-circle" alt="blutree" width="300" height="200"></div>
+           
+            <div class="col-md offset-md-1" style="background-color: darkgreen;">first</div><!--offset is for getting space on left side-->
+            <div class="col" style="background-color: deeppink;">second</div>
+            <div class="col" style="background-color: gold;">third</div>
+        </div>
+   </div><br>
+   <div class="container">
+      <button class="btn btn-warning">New Messages
+          <span class="badge badge-success">8</span></button><!--badge inside a button-->
+   </div><br>
+   <div class="progress">
+       <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width: 60%;">Processing</div>
+        <!--progress bar animated-->
+       </div>
+
+</body>
+</html>

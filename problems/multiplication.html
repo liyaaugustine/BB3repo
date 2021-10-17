@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multiplication</title>
+</head>
+<body>
+    Enter the number:
+    <input type="number" id="numb"><br><br>
+    Enter the limit:
+    <input type="number" id="limit"><br><br>
+    <button type="button" onclick="mul()">Click</button>
+    <script>
+        function mul(){
+         var a,b,i,res;
+
+      a=Number(document.getElementById('numb').value);
+      b=Number(document.getElementById('limit').value);
+      
+    for(i=1; i<=b; i++){
+       res=a*i;
+       document.write(res +"<br>")
+    }
+        }
+    </script>
+</body>
+</html>
